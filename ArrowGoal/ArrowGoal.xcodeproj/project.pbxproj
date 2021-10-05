@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		ECCDB122270BE07900B3B3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB121270BE07900B3B3B1 /* AppDelegate.swift */; };
 		ECCDB124270BE07900B3B3B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB123270BE07900B3B3B1 /* SceneDelegate.swift */; };
-		ECCDB126270BE07900B3B3B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB125270BE07900B3B3B1 /* ViewController.swift */; };
+		ECCDB126270BE07900B3B3B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB125270BE07900B3B3B1 /* LoginViewController.swift */; };
 		ECCDB129270BE07900B3B3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCDB127270BE07900B3B3B1 /* Main.storyboard */; };
 		ECCDB12C270BE07900B3B3B1 /* ArrowGoal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECCDB12A270BE07900B3B3B1 /* ArrowGoal.xcdatamodeld */; };
 		ECCDB12E270BE07B00B3B3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCDB12D270BE07B00B3B3B1 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		ECCDB11E270BE07900B3B3B1 /* ArrowGoal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArrowGoal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCDB121270BE07900B3B3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCDB123270BE07900B3B3B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECCDB125270BE07900B3B3B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECCDB125270BE07900B3B3B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ECCDB128270BE07900B3B3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECCDB12B270BE07900B3B3B1 /* ArrowGoal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArrowGoal.xcdatamodel; sourceTree = "<group>"; };
 		ECCDB12D270BE07B00B3B3B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,16 +58,80 @@
 		ECCDB120270BE07900B3B3B1 /* ArrowGoal */ = {
 			isa = PBXGroup;
 			children = (
-				ECCDB121270BE07900B3B3B1 /* AppDelegate.swift */,
-				ECCDB123270BE07900B3B3B1 /* SceneDelegate.swift */,
-				ECCDB125270BE07900B3B3B1 /* ViewController.swift */,
-				ECCDB127270BE07900B3B3B1 /* Main.storyboard */,
-				ECCDB12D270BE07B00B3B3B1 /* Assets.xcassets */,
-				ECCDB12F270BE07B00B3B3B1 /* LaunchScreen.storyboard */,
 				ECCDB132270BE07B00B3B3B1 /* Info.plist */,
-				ECCDB12A270BE07900B3B3B1 /* ArrowGoal.xcdatamodeld */,
+				ECCDB13F270BE42900B3B3B1 /* Data */,
+				ECCDB13B270BE32900B3B3B1 /* Scene */,
+				ECCDB13A270BE30400B3B3B1 /* Resource */,
+				ECCDB139270BE29A00B3B3B1 /* App Delegate */,
 			);
 			path = ArrowGoal;
+			sourceTree = "<group>";
+		};
+		ECCDB139270BE29A00B3B3B1 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB121270BE07900B3B3B1 /* AppDelegate.swift */,
+				ECCDB123270BE07900B3B3B1 /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		ECCDB13A270BE30400B3B3B1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB12D270BE07B00B3B3B1 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		ECCDB13B270BE32900B3B3B1 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB13E270BE36E00B3B3B1 /* Login */,
+				ECCDB13D270BE35D00B3B3B1 /* LaunchScreen */,
+				ECCDB13C270BE33300B3B3B1 /* Storyboards */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		ECCDB13C270BE33300B3B3B1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB127270BE07900B3B3B1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ECCDB13D270BE35D00B3B3B1 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB12F270BE07B00B3B3B1 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		ECCDB13E270BE36E00B3B3B1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB125270BE07900B3B3B1 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ECCDB13F270BE42900B3B3B1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB140270BE43C00B3B3B1 /* CoreData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ECCDB140270BE43C00B3B3B1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDB12A270BE07900B3B3B1 /* ArrowGoal.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCDB12C270BE07900B3B3B1 /* ArrowGoal.xcdatamodeld in Sources */,
-				ECCDB126270BE07900B3B3B1 /* ViewController.swift in Sources */,
+				ECCDB126270BE07900B3B3B1 /* LoginViewController.swift in Sources */,
 				ECCDB122270BE07900B3B3B1 /* AppDelegate.swift in Sources */,
 				ECCDB124270BE07900B3B3B1 /* SceneDelegate.swift in Sources */,
 			);
